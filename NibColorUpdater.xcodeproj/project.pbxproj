@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		403D6A7628F67AAE001B9701 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D6A7528F67AAE001B9701 /* main.swift */; };
+		403D6A7D28F67B0A001B9701 /* ColorResourceEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D6A7C28F67B0A001B9701 /* ColorResourceEditor.swift */; };
+		403D6A7F28F67B31001B9701 /* SwiftyXMLParser+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D6A7E28F67B31001B9701 /* SwiftyXMLParser+Tool.swift */; };
+		403D6A8228F67B78001B9701 /* SwiftyXMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = 403D6A8128F67B78001B9701 /* SwiftyXMLParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		403D6A7228F67AAE001B9701 /* NibColorUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NibColorUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		403D6A7528F67AAE001B9701 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		403D6A7C28F67B0A001B9701 /* ColorResourceEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResourceEditor.swift; sourceTree = "<group>"; };
+		403D6A7E28F67B31001B9701 /* SwiftyXMLParser+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyXMLParser+Tool.swift"; sourceTree = "<group>"; };
+		403D6A8328F67BA8001B9701 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D6A8228F67B78001B9701 /* SwiftyXMLParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +64,10 @@
 		403D6A7428F67AAE001B9701 /* NibColorUpdater */ = {
 			isa = PBXGroup;
 			children = (
+				403D6A8328F67BA8001B9701 /* README.md */,
 				403D6A7528F67AAE001B9701 /* main.swift */,
+				403D6A7C28F67B0A001B9701 /* ColorResourceEditor.swift */,
+				403D6A7E28F67B31001B9701 /* SwiftyXMLParser+Tool.swift */,
 			);
 			path = NibColorUpdater;
 			sourceTree = "<group>";
@@ -78,6 +88,9 @@
 			dependencies = (
 			);
 			name = NibColorUpdater;
+			packageProductDependencies = (
+				403D6A8128F67B78001B9701 /* SwiftyXMLParser */,
+			);
 			productName = NibColorUpdater;
 			productReference = 403D6A7228F67AAE001B9701 /* NibColorUpdater */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 403D6A6928F67AAE001B9701;
+			packageReferences = (
+				403D6A8028F67B78001B9701 /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */,
+			);
 			productRefGroup = 403D6A7328F67AAE001B9701 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D6A7F28F67B31001B9701 /* SwiftyXMLParser+Tool.swift in Sources */,
+				403D6A7D28F67B0A001B9701 /* ColorResourceEditor.swift in Sources */,
 				403D6A7628F67AAE001B9701 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		403D6A8028F67B78001B9701 /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yahoojapan/SwiftyXMLParser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		403D6A8128F67B78001B9701 /* SwiftyXMLParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 403D6A8028F67B78001B9701 /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */;
+			productName = SwiftyXMLParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 403D6A6A28F67AAE001B9701 /* Project object */;
 }

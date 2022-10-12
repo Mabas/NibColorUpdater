@@ -22,7 +22,17 @@
  * THE SOFTWARE.
  */
 
-NibColorResourceEditor(
-    sourcePath: "/Users/mauricioventura/Xc/rvshare-mobile-ios/RVShare",
-    xibCatalogPath: "/Users/mauricioventura/Xc/UpdateColorResources/UpdateColorResources/NewColors.xib"
-)
+import SwiftyXMLParser
+
+extension XML.Accessor {
+    var colorString: String? {
+        guard let red = self.color.attributes["red"],
+              let green = self.color.attributes["green"],
+              let blue = self.color.attributes["blue"],
+              let alpha = self.color.attributes["alpha"],
+              let colorSpace = self.color.attributes["colorSpace"],
+              let customColorSpace = self.color.attributes["customColorSpace"]
+        else { return nil }
+        return "<color red=\"\(red)\" green=\"\(green)\" blue=\"\(blue)\" alpha=\"\(alpha)\" colorSpace=\"\(colorSpace)\" customColorSpace=\"\(customColorSpace)\"/>"
+    }
+}
