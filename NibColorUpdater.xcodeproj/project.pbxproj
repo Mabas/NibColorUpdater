@@ -65,6 +65,7 @@
 		403D6A7428F67AAE001B9701 /* NibColorUpdater */ = {
 			isa = PBXGroup;
 			children = (
+				403D6A8328F67BA8001B9701 /* README.md */,
 				403D6A7528F67AAE001B9701 /* main.swift */,
 				403D6A7C28F67B0A001B9701 /* ColorResourceEditor.swift */,
 				403D6A7E28F67B31001B9701 /* SwiftyXMLParser+Tool.swift */,
