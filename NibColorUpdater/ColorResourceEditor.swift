@@ -108,8 +108,8 @@ class NibColorResourceEditor {
             colorsCount += 1
         }
         do {
-            //try fm.removeItem(atPath: path)
-            //try xibString.write(toFile: path, atomically: false, encoding: .utf8)
+            try fm.removeItem(atPath: path)
+            try xibString.write(toFile: path, atomically: false, encoding: .utf8)
             if colorsCount > 0 {
                 print("\(colorsCount) were updated in \(path)\n==================")
                 editedColors += colorsCount
